@@ -13,7 +13,7 @@ preprocessed_path = script_dir / "data" / "telco_churn_preprocessed.csv"
 if not preprocessed_path.exists():
     raise FileNotFoundError(
         f"Arquivo não encontrado: {preprocessed_path}. "
-        "Rode primeiro o pré-processamento (trabalho_cd.py) para gerá-lo."
+        "Rode primeiro o script 2_exploracao_preprocessamento.py para gerá-lo."
     )
 
 # 1. Carregar e Dividir
