@@ -12,7 +12,7 @@ os.makedirs('data', exist_ok=True)
 
 # 1. CARREGANDO OS DADOS
 print("--- 1. CARREGANDO OS DADOS ---")
-df = pd.read_csv('heart_disease.csv')
+df = pd.read_csv('data/heart_disease.csv')
 
 # 2. EXPLORAÇÃO DOS DADOS (Requisito 'b' do trabalho)
 print("\n--- 2. EXPLORAÇÃO DOS DADOS ---")

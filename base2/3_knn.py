@@ -9,7 +9,7 @@ script_dir = Path(__file__).resolve().parent
 plots_dir = script_dir / "plots" / "base_02"
 plots_dir.mkdir(parents=True, exist_ok=True)
 
-preprocessed_path = script_dir / "telco_churn_preprocessed.csv"
+preprocessed_path = script_dir / "data" / "telco_churn_preprocessed.csv"
 if not preprocessed_path.exists():
     raise FileNotFoundError(
         f"Arquivo não encontrado: {preprocessed_path}. "

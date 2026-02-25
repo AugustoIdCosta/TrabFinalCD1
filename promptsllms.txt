@@ -1,0 +1,5 @@
+## Etapa: Escolha dos Algoritmos de Classificação
+* **LLM Usada:** Gemini 3 Pro
+* **Prompt:** "chat me de sujestoes de modelos de Ia que eu posso usar, estava pensando em usar o arvore de decisão e knn e para o terceiro queria sujestoẽs"
+* **Uso:** Discussão sobre a escolha dos algoritmos, mantendo Árvore de Decisão e KNN, e análise de sugestões (Random Forest, XGBoost e SVM) para cumprir o requisito de utilizar um algoritmo não abordado em sala de aula.
+
