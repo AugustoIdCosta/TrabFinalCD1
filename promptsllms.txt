@@ -1,5 +1,28 @@
+## Etapa: Análise de Requisitos e Escopo
+* **LLM Usada:** Gemini 3 Pro
+* **Prompt:** "Boa noite gemini, te mandei agora o trabalho final de ciencias de dados 1, queria que vc me ajudasse por meio dessa conversa no trabalho para você sempre possuir o contexto."
+* [cite_start]**Uso:** Leitura do edital em PDF e extração das tarefas principais, gerando um checklist focado nos requisitos de pré-processamento, escolha de algoritmos e critérios de avaliação do relatório [cite: 3-52].
+
 ## Etapa: Escolha dos Algoritmos de Classificação
 * **LLM Usada:** Gemini 3 Pro
 * **Prompt:** "chat me de sujestoes de modelos de Ia que eu posso usar, estava pensando em usar o arvore de decisão e knn e para o terceiro queria sujestoẽs"
 * **Uso:** Discussão sobre a escolha dos algoritmos, mantendo Árvore de Decisão e KNN, e análise de sugestões (Random Forest, XGBoost e SVM) para cumprir o requisito de utilizar um algoritmo não abordado em sala de aula.
 
+* **LLM Usada:** Gemini 3 Pro
+* **Prompt:** "Chat faça um codigo python que realize a binarização da feature target, e nas features ca e thal use moda para estipular valores ausentes. Depois realize a normalização dos dados para eu utilizar o KNN e o SVM, no mesmo codigo também quero que ele gere graficos de distruibuição e matriz de correlação"
+* [cite_start]**Uso:** Geração de script Python com `pandas`, `seaborn` e `scikit-learn` para análise exploratória, geração de gráficos, binarização da classe alvo, imputação de valores ausentes e normalização via StandardScaler.
+
+## Etapa: Implementação dos Modelos e Avaliação
+* **LLM Usada:** Gemini 3 Pro
+* **Prompt:** "quero um codigo python para cada algoritmo de machine learning (KNN, arvore de decisão e SVM), quero que o codigo realize a propria divisão de treino e teste (70%, 30%), e no final mostre as metricas de Acurácia e f1-score. Pode meter marcha"
+* **Uso:** Criação de três scripts Python independentes para KNN, Decision Tree e SVM. Implementação de divisão treino/teste, teste de duas parametrizações por modelo, avaliação de Acurácia/F1-Score e geração de matrizes de confusão.
+
+## Etapa: Redação do Relatório
+* **LLM Usada:** Gemini 3 Pro
+* **Prompt:** "Chat agora com base nos dados que te mandei sobre os resultados dos algoritmos, gere pra mim um esqueleto do Relatório "
+* [cite_start]**Uso:** Estruturação formal e redação da primeira parte do documento final, cobrindo os tópicos: Introdução, Descrição da Base, Metodologia (com explicação dos passos do SVM e fórmulas das métricas) e template para a Discussão de Resultados [cite: 36-49].
+
+## Etapa: Finalização do Relatório
+* **LLM Usada:** Gemini 3 Pro
+ **Prompt:** "Chat agora me fale os prompts que usamos para eu colocar no meu arquivo promptsllms.txt
+* [cite_start]**Uso:** Recaptulação dos prompts usados para finalização do trabalho
